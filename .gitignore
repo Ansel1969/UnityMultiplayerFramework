@@ -1,38 +1,57 @@
+# Unityの生成フォルダー（リポジトリ直下）
 /[Ll]ibrary/
 /[Tt]emp/
-/[Oo]bj/
 /[Bb]uild/
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 /[Mm]emoryCaptures/
 /[Rr]ecordings/
-/.vs/
+
+# Unityが自動生成するプロジェクト・ソリューション
+# Server内のファイルは除外しない
+/*.csproj
+/*.sln
+/*.slnx
+/*.booproj
+
+# .NETのビルド生成物（全階層）
+[Bb]in/
+[Oo]bj/
+
+# エディター設定・作業ファイル
+.vs/
 /.idea/
 /.vscode/
-*.csproj
-*.sln
-*.slnx
 *.suo
 *.user
 *.userprefs
 *.pidb
-*.booproj
 *.svd
 *.pdb
 *.mdb
 *.opendb
 *.VC.db
+
+# ビルド成果物・エクスポート
 *.apk
 *.aab
 *.unitypackage
+
+# ログ・ツール生成ファイル
 sysinfo.txt
 crashlytics-build.properties
+
+# OS生成ファイル
 .DS_Store
 Thumbs.db
+
+# 環境変数・秘密情報
 .env
 .env.*
 !.env.example
+
+# 署名鍵・証明書
 *.keystore
 *.jks
 *.p12
